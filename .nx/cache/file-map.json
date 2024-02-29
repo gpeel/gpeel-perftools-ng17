@@ -35,9 +35,14 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^17.2.0",
     "typescript": "~5.3.2"
   },
-  "pathMappings": {},
+  "pathMappings": {
+    "@gpeel/perftools": [
+      "./projects/gpeel/perftools/src/public-api.ts"
+    ]
+  },
   "nxJsonPlugins": [],
   "fileMap": {
     "projectFileMap": {},
@@ -71,8 +76,12 @@
         "hash": "9384358194833272274"
       },
       {
+        "file": "READMEs/README-adding-project-demo-perftools-hardcoded.md",
+        "hash": "2067809706225802070"
+      },
+      {
         "file": "READMEs/README-install-library.md",
-        "hash": "13581111007853558786"
+        "hash": "8511559416627958995"
       },
       {
         "file": "READMEs/README-install.md",
@@ -84,15 +93,63 @@
       },
       {
         "file": "angular.json",
-        "hash": "14690674819587762807"
+        "hash": "11907186528552048459"
       },
       {
         "file": "package-lock.json",
-        "hash": "10537896796556955243"
+        "hash": "11438510326532306540"
       },
       {
         "file": "package.json",
-        "hash": "6362581967281763340"
+        "hash": "6782564709944238561"
+      },
+      {
+        "file": "projects/gpeel/perftools/.eslintrc.json",
+        "hash": "3000944401409037308"
+      },
+      {
+        "file": "projects/gpeel/perftools/README.md",
+        "hash": "16999326959749559010"
+      },
+      {
+        "file": "projects/gpeel/perftools/ng-package.json",
+        "hash": "7753498764511581516"
+      },
+      {
+        "file": "projects/gpeel/perftools/package.json",
+        "hash": "13116052937707038045"
+      },
+      {
+        "file": "projects/gpeel/perftools/src/lib/perftools.component.spec.ts",
+        "hash": "16838305628421263442"
+      },
+      {
+        "file": "projects/gpeel/perftools/src/lib/perftools.component.ts",
+        "hash": "14206763979538832023"
+      },
+      {
+        "file": "projects/gpeel/perftools/src/lib/perftools.service.spec.ts",
+        "hash": "1902408650967982456"
+      },
+      {
+        "file": "projects/gpeel/perftools/src/lib/perftools.service.ts",
+        "hash": "5752292278220042377"
+      },
+      {
+        "file": "projects/gpeel/perftools/src/public-api.ts",
+        "hash": "4593625130071591863"
+      },
+      {
+        "file": "projects/gpeel/perftools/tsconfig.lib.json",
+        "hash": "11617815499725119306"
+      },
+      {
+        "file": "projects/gpeel/perftools/tsconfig.lib.prod.json",
+        "hash": "6958467553555132988"
+      },
+      {
+        "file": "projects/gpeel/perftools/tsconfig.spec.json",
+        "hash": "2903595533919844908"
       },
       {
         "file": "src/app/app.component.css",
@@ -144,7 +201,7 @@
       },
       {
         "file": "tsconfig.json",
-        "hash": "3343339550490537441"
+        "hash": "10862164237394717502"
       },
       {
         "file": "tsconfig.spec.json",

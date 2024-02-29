@@ -141,6 +141,103 @@
           }
         }
       }
+    },
+    "perftools-hardcoded": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/perftools-hardcoded",
+      "sourceRoot": "projects/perftools-hardcoded/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/perftools-hardcoded",
+            "index": "projects/perftools-hardcoded/src/index.html",
+            "browser": "projects/perftools-hardcoded/src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "projects/perftools-hardcoded/tsconfig.app.json",
+            "assets": [
+              "projects/perftools-hardcoded/src/favicon.ico",
+              "projects/perftools-hardcoded/src/assets"
+            ],
+            "styles": [
+              "projects/perftools-hardcoded/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "perftools-hardcoded:build:production"
+            },
+            "development": {
+              "buildTarget": "perftools-hardcoded:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "perftools-hardcoded:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "projects/perftools-hardcoded/tsconfig.spec.json",
+            "assets": [
+              "projects/perftools-hardcoded/src/favicon.ico",
+              "projects/perftools-hardcoded/src/assets"
+            ],
+            "styles": [
+              "projects/perftools-hardcoded/src/styles.css"
+            ],
+            "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/perftools-hardcoded/**/*.ts",
+              "projects/perftools-hardcoded/**/*.html"
+            ]
+          }
+        }
+      }
     }
   },
   "cli": {
