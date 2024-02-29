@@ -10,7 +10,8 @@ For Angular 11.x.y => use @gpeel/my-perf-tools@11.2.0 (last version for angular 
 
 npm repo: https://www.npmjs.com/package/@gpeel/my-perf-tools
 
+Before v17
 github repo: https://github.com/gpeel/my-perf-tools
-For v17
 
+For v17:
 github repo: https://github.com/gpeel/gpeel-perftools-ng17
