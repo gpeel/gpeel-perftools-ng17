@@ -32,7 +32,6 @@ tsconfig paths to tell the build system where to find the library.
 
     "paths": {
       "@gpeel/perftools": [
-      "./dist/gpeel/perftools/gpeel-perftools",
       "./dist/gpeel/perftools"
       ]
     }

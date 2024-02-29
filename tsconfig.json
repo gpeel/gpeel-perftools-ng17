@@ -3,9 +3,7 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "@gpeel/perftools": [
-        "./dist/gpeel/perftools"
-      ]
+      "@gpeel/perftools": ["./projects/gpeel/perftools/src/public-api.ts"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
