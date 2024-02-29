@@ -32,6 +32,6 @@ to install because missing by default and used but my rules:
 
 ## bump
 
-    npm install -g bump-cli
+    "bump-cli": "^1.1.3",
 
     npm i  cpx@1.5.0
