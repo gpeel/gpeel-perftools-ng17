@@ -1,13 +1,20 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {CommonModule} from '@angular/common';
+import {Component} from '@angular/core';
+import {PerftoolsModule} from '@gpeel/perftools';
+import {ChildComponent} from './child.component';
+
+// noinspection JSVoidFunctionReturnValueUsed
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [CommonModule,PerftoolsModule, ChildComponent],
+  template: `
+    <root-refresh-count></root-refresh-count>
+    <div>App Component works!</div>
+    <app-child></app-child>
+  `
 })
 export class AppComponent {
-  title = 'gpeel-perftools-ng17';
 }
+

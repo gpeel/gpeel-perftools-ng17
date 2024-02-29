@@ -1,24 +1,16 @@
-# Perftools
+# @gpeel/perftools
 
 This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.2.0.
 
-## Code scaffolding
+For Angular 17.x.y  => use @gpeel/my-perf-tools 17.0.0 or more recent
 
-Run `ng generate component component-name --project perftools` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project perftools`.
-> Note: Don't forget to add `--project perftools` or else it will be added to the default project in your `angular.json` file. 
+For Angular 12.x.y or more => use @gpeel/my-perf-tools 12.0.0 or more recent
 
-## Build
+For Angular 11.x.y => use @gpeel/my-perf-tools@11.2.0 (last version for angular 11)
 
-Run `ng build perftools` to build the project. The build artifacts will be stored in the `dist/` directory.
+npm repo: https://www.npmjs.com/package/@gpeel/my-perf-tools
 
-## Publishing
+github repo: https://github.com/gpeel/my-perf-tools
+For v17
 
-After building your library with `ng build perftools`, go to the dist folder `cd dist/perftools` and run `npm publish`.
-
-## Running unit tests
-
-Run `ng test perftools` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+github repo: https://github.com/gpeel/gpeel-perftools-ng17
