@@ -9,7 +9,7 @@
     "cpSources_3": "cpx -v \"./projects/gpeel/my-perf-tools/src/**/*.*\"   ./dist/gpeel/my-perf-tools/src",
     "publish_4": "cd ./dist/gpeel/my-perf-tools && npm publish --access public ",
     "start-with-lib": "ng serve",
-    "start-perf-hard-coded": "ng serve hello-perf-hard-coded --port=4300",
+    "start-perf-hardcoded": "ng serve perftools-hardcoded --port=4300",
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
