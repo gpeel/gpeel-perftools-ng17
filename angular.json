@@ -88,8 +88,64 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        }
+      }
+    },
+    "@gpeel/perftools": {
+      "projectType": "library",
+      "root": "projects/gpeel/perftools",
+      "sourceRoot": "projects/gpeel/perftools/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/gpeel/perftools/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/gpeel/perftools/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/gpeel/perftools/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/gpeel/perftools/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/gpeel/perftools/**/*.ts",
+              "projects/gpeel/perftools/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
